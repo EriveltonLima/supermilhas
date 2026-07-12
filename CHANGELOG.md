@@ -8,6 +8,7 @@
 - Impede que a conversão LATAM leia suas próprias etiquetas.
 - Remove etiquetas duplicadas no site da LATAM.
 - Aceita como coparticipação LATAM apenas valores nativos em BRL ou no `aria-label`.
+- Remove badges legados de conversores anteriores dentro das tarifas LATAM.
 - Calcula o total de milhas + dinheiro no LATAM Pass.
 - Torna conservadora a conversão do cartão principal do Seats.aero.
 - Melhora links LATAM no Google Voos.
