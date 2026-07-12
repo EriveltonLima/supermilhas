@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça os recursos do Supermilhas para comparar emissões com pontos e milhas.">
+  <title>Conheça o Supermilhas</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="brand" href="about.html"><img src="icon48.png" width="40" height="40" alt="">Supermilhas</a>
+      <a class="button button--secondary" href="popup.html">Configurar CPMs</a>
+    </nav>
+    <div class="hero__content">
+      <p class="eyebrow">Sua leitura brasileira de passagens-prêmio</p>
+      <h1>Entenda o custo real das suas milhas antes de emitir.</h1>
+      <p class="lead">O Supermilhas adiciona valores em reais, contexto de tabelas e atalhos estratégicos diretamente nos sites onde você pesquisa disponibilidade.</p>
+      <a class="button" href="#recursos">Conhecer os recursos</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" aria-labelledby="como-funciona">
+      <div>
+        <p class="eyebrow">Como funciona</p>
+        <h2 id="como-funciona">Pontos deixam de ser um número abstrato</h2>
+      </div>
+      <div class="formula" aria-label="Fórmula de cálculo">
+        <span>Quantidade</span><b>÷ 1.000</b><b>× CPM</b><b>= custo estimado</b>
+        <span class="formula__example">60.000 Avios × R$ 39/milheiro = R$ 2.340</span>
+      </div>
+      <p>Você define quanto vale cada milheiro. A extensão preserva o valor original e mostra ao lado uma estimativa em reais. LATAM Pass, Avios, Smiles, Azul e Aegean podem ter CPMs independentes.</p>
+    </section>
+
+    <section class="section" id="recursos" aria-labelledby="sites-title">
+      <div>
+        <p class="eyebrow">Onde funciona</p>
+        <h2 id="sites-title">Seis sites, uma configuração</h2>
+      </div>
+      <div class="cards">
+        <article class="card"><h3>Seats.aero</h3><p>Converte booking options com programa explícito, sugere parceiros em voos diretos e melhora o menu Explore para o uso brasileiro.</p></article>
+        <article class="card"><h3>SeatSpy</h3><p>Mostra o custo em reais no hover do calendário e no modal de detalhes, sem esconder pontos ou assentos.</p></article>
+        <article class="card"><h3>Iberia</h3><p>Converte Avios nos resultados e nas opções Avios &amp; Money. No Seats.aero, também informa Peak ou Off-Peak.</p></article>
+        <article class="card"><h3>Qatar Airways</h3><p>Converte os cabin cards e o calendário semanal usando o mesmo CPM Avios configurado por você.</p></article>
+        <article class="card"><h3>LATAM Airlines</h3><p>Converte as milhas dos resultados LATAM Pass e mostra o total estimado incluindo a parcela adicional em dinheiro.</p></article>
+        <article class="card"><h3>Google Voos</h3><p>Adiciona um atalho “Milhas” aos resultados LATAM para consultar a mesma rota e data no LATAM Pass.</p></article>
+      </div>
+    </section>
+
+    <section class="section section--split" aria-labelledby="inteligencia-title">
+      <div>
+        <p class="eyebrow">Contexto inteligente</p>
+        <h2 id="inteligencia-title">Moeda, companhia e tabela não são a mesma coisa</h2>
+        <p>O Supermilhas identifica a operadora pelo prefixo do voo e prioriza sua moeda natural: Avios para Iberia, Qatar, Finnair, British, Aer Lingus, Vueling e Loganair; LATAM Pass para LA; Aegean para A3; Azul para AD; e Smiles para G3.</p>
+      </div>
+      <ul class="checklist">
+        <li><b>Somente voos diretos:</b> DL e AM podem indicar LATAM; CM pode indicar Aegean; CX e AA podem indicar Qatar Avios.</li>
+        <li><b>Consulta LATAM Pass:</b> voos `LA` encontrados em programas parceiros ganham um link para comparar a rota diretamente em milhas LATAM.</li>
+        <li><b>Tabelas identificadas:</b> Iberia, British, Finnair e Qatar recebem contexto sem alterar o preço publicado.</li>
+        <li><b>Rotas em destaque:</b> dez emissões de Executiva no Qatar Explore recebem uma estrela.</li>
+        <li><b>Menu brasileiro:</b> programas prioritários sobem para o topo e badges estrangeiras cedem lugar a moedas e buscas relevantes.</li>
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="limites-title">
+      <div>
+        <p class="eyebrow">Transparência</p>
+        <h2 id="limites-title">Uma ferramenta de comparação, não uma promessa de emissão</h2>
+      </div>
+      <p>Os valores em reais representam o custo de aquisição estimado das milhas. Taxas, sobretaxas, disponibilidade, regras Peak/Off-Peak e tarifas Regular/Flexi precisam ser confirmadas no programa emissor. Uma badge de parceria indica uma possibilidade de resgate, não disponibilidade garantida.</p>
+    </section>
+
+    <section class="section faq-section" aria-labelledby="faq-title">
+      <div>
+        <p class="eyebrow">Perguntas frequentes</p>
+        <h2 id="faq-title">FAQ do Supermilhas</h2>
+      </div>
+      <div class="faq-list">
+        <details><summary>O que é CPM?</summary><p>É o custo por milheiro: quanto você atribui a cada 1.000 pontos ou milhas. O Supermilhas usa esse valor para estimar o custo em reais.</p></details>
+        <details><summary>Posso alterar os CPMs?</summary><p>Sim. LATAM Pass, Avios, Smiles, Azul e Aegean possuem campos independentes no popup. As alterações são aplicadas às etiquetas da extensão.</p></details>
+        <details><summary>A conversão inclui taxas?</summary><p>O custo das milhas não inclui taxas. Quando a LATAM exibe uma parcela em dinheiro junto das milhas, o Supermilhas também apresenta o total estimado dessa combinação.</p></details>
+        <details><summary>Uma badge de parceria garante a emissão?</summary><p>Não. Ela indica uma possibilidade conhecida. O inventário pode variar entre programas e deve ser confirmado no site emissor.</p></details>
+        <details><summary>Por que parcerias aparecem apenas em voos diretos?</summary><p>A extensão adota uma regra conservadora para tabelas fixas. Itinerários com conexões podem ter precificação e elegibilidade diferentes.</p></details>
+        <details><summary>O que significam as estrelas no Qatar Explore?</summary><p>Elas destacam dez rotas de Executiva consideradas interessantes para o Privilege Club. A estrela não garante assento nem preço.</p></details>
+        <details><summary>Quais dados a extensão armazena?</summary><p>Apenas as configurações locais, como CPMs e chave Pix. O Supermilhas não precisa enviar seu histórico de pesquisas para um servidor.</p></details>
+        <details><summary>Por que a mesma passagem pode aparecer em um programa e não em outro?</summary><p>Cada aba do Seats.aero representa uma fonte de disponibilidade. Companhias parceiras nem sempre compartilham exatamente o mesmo inventário.</p></details>
+      </div>
+    </section>
+
+    <section class="donation" aria-labelledby="donation-title">
+      <p class="eyebrow">Apoie o desenvolvimento</p>
+      <h2 id="donation-title">O Supermilhas é feito para tornar emissões mais claras.</h2>
+      <p>Se a extensão economizou seu tempo ou ajudou em uma boa emissão, considere fazer uma doação ao desenvolvedor. Seu apoio mantém as integrações atualizadas e viabiliza novos recursos.</p>
+      <div class="pix" id="pixArea">
+        <span>Chave Pix</span>
+        <code id="pixValue">Configure uma chave Pix no popup</code>
+        <button class="button" id="copyPix" type="button" disabled>Copiar chave Pix</button>
+      </div>
+      <p class="status" id="copyStatus" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer><span>Supermilhas <span id="version"></span></span><span>Estimativas para apoiar sua decisão.</span></footer>
+  <script src="settings.js"></script>
+  <script src="about.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Supermilhas",
+  "version": "1.0.0",
+  "description": "Converte milhas e Avios em reais e cria atalhos de resgate no Seats.aero, SeatSpy, Iberia, Qatar Airways, LATAM e Google Voos.",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://seats.aero/*",
+        "https://www.seatspy.com/*",
+        "https://seatspy.com/*",
+        "https://iberia.com/*",
+        "https://*.iberia.com/*",
+        "https://qatarairways.com/*",
+        "https://*.qatarairways.com/*",
+        "https://latamairlines.com/*",
+        "https://*.latamairlines.com/*",
+        "https://www.google.com/travel/flights*",
+        "https://www.google.com.br/travel/flights*"
+      ],
+      "css": ["styles.css"],
+      "js": ["settings.js", "lib/mileage.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Supermilhas</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>✈️ Supermilhas</h1>
+      <p>Conversão de milhas e Avios em R$ e atalhos de resgate nos sites compatíveis.</p>
+    </header>
+
+    <section aria-labelledby="cpms-title">
+      <h2 id="cpms-title">CPM — custo por 1.000 pontos</h2>
+      <p class="hint">Use vírgula ou ponto. Campos opcionais só geram conversão quando preenchidos.</p>
+      <form id="settingsForm">
+        <label>LATAM Pass <input id="latam" name="latam" inputmode="decimal" aria-label="CPM LATAM Pass"></label>
+        <label>Avios <input id="avios" name="avios" inputmode="decimal" aria-label="CPM Avios"></label>
+        <label>Smiles <input id="smiles" name="smiles" inputmode="decimal" placeholder="Não definido" aria-label="CPM Smiles"></label>
+        <label>Azul <input id="azul" name="azul" inputmode="decimal" placeholder="Não definido" aria-label="CPM Azul"></label>
+        <label>Aegean <input id="aegean" name="aegean" inputmode="decimal" placeholder="Não definido" aria-label="CPM Aegean Miles+Bonus"></label>
+        <button id="save" type="submit">Salvar CPMs</button>
+      </form>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section aria-labelledby="donation-title">
+      <h2 id="donation-title">☕ Apoie o projeto</h2>
+      <p class="hint">Se a extensão ajudar nas emissões, uma doação via Pix mantém as melhorias vivas.</p>
+      <label>Chave Pix para doações
+        <input id="pixKey" name="pixKey" type="text" placeholder="erivelton.lima.tech@gmail.com" aria-label="Chave Pix para doações">
+      </label>
+      <button id="copyPix" type="button" disabled>Copiar chave Pix</button>
+    </section>
+
+    <footer>Estimativas não incluem taxas aeroportuárias ou sobretaxas.</footer>
+    <a class="about-link" href="about.html" target="_blank">Conheça tudo que o Supermilhas faz</a>
+  </main>
+  <script src="settings.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

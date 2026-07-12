@@ -1,0 +1,341 @@
+.milhas-calculator-label {
+  display: inline-block;
+  margin: 0.25rem 0 0.25rem 0.4rem;
+  padding: 0.18rem 0.45rem;
+  border: 1px solid #9ab6a8;
+  border-radius: 0.3rem;
+  background: #f2faf5;
+  color: #174b2c;
+  font: 600 0.78rem/1.35 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+/* A conversão em reais herda a identidade visual da moeda usada no cálculo. */
+.milhas-calculator-label[data-milhas-calculator-currency="avios"] {
+  border-color: #a85378;
+  background: #f8eaf0;
+  color: #74284b;
+}
+
+.milhas-calculator-label[data-milhas-calculator-currency="latam"] {
+  border-color: #8767bf;
+  background: #f2edfb;
+  color: #573493;
+}
+
+.milhas-calculator-label[data-milhas-calculator-currency="smiles"] {
+  border-color: #d28b2f;
+  background: #fff4df;
+  color: #7a4a0c;
+}
+
+.milhas-calculator-label[data-milhas-calculator-currency="azul"] {
+  border-color: #4a91c7;
+  background: #eaf5fc;
+  color: #165b8c;
+}
+
+.milhas-calculator-label[data-milhas-calculator-currency="aegean"] {
+  border-color: #527ec2;
+  background: #edf3fc;
+  color: #294f8c;
+}
+
+.milhas-calculator-label--missing {
+  border-color: #b58b46;
+  background: #fff8e8;
+  color: #6b4711;
+  font-size: 0.68rem;
+}
+
+/* O menu Explore original destaca cartões dos EUA. O Supermilhas troca essas
+   badges por moedas e parcerias relevantes para emissões brasileiras. */
+.nav-menu .nav-badge:not([data-milhas-calculator-nav-badge]) {
+  display: none !important;
+}
+
+.milhas-calculator-nav-badge {
+  display: inline-block;
+  margin-left: 0.3rem;
+  padding: 0.12rem 0.38rem;
+  border: 1px solid #4f8f70;
+  border-radius: 999px;
+  background: #eaf7ef;
+  color: #185538;
+  font: 700 0.66rem/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  white-space: nowrap;
+}
+
+.milhas-calculator-nav-badge[data-milhas-calculator-badge-kind="avios"],
+.milhas-calculator-nav-badge[data-milhas-calculator-badge-kind="qatar"] {
+  border-color: #a85378;
+  background: #f8eaf0;
+  color: #74284b;
+}
+
+.milhas-calculator-nav-badge[data-milhas-calculator-badge-kind="azul"] {
+  border-color: #4a91c7;
+  background: #eaf5fc;
+  color: #165b8c;
+}
+
+.milhas-calculator-nav-badge[data-milhas-calculator-badge-kind="smiles"] {
+  border-color: #d28b2f;
+  background: #fff4df;
+  color: #7a4a0c;
+}
+
+.milhas-calculator-nav-badge[data-milhas-calculator-badge-kind="latam"] {
+  border-color: #8767bf;
+  background: #f2edfb;
+  color: #573493;
+}
+
+.milhas-calculator-nav-badge[data-milhas-calculator-badge-kind="aegean"] {
+  border-color: #527ec2;
+  background: #edf3fc;
+  color: #294f8c;
+}
+
+.milhas-calculator-nav-badge[data-milhas-calculator-badge-kind="search"] {
+  border-color: #788593;
+  background: #eff2f5;
+  color: #3d4a57;
+}
+
+.milhas-calculator-nav-separator {
+  margin: 0.65rem 0.75rem 0.3rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid #52606f;
+  color: #9da9b7;
+  font: 700 0.7rem/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-transform: uppercase;
+}
+
+.milhas-calculator-featured-route {
+  display: inline-block;
+  margin-right: 0.3rem;
+  color: #f2b705;
+  font-size: 1rem;
+  line-height: 1;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 25%);
+  vertical-align: middle;
+}
+
+.milhas-calculator-latam-search {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.45rem;
+  padding: 0.14rem 0.38rem;
+  border: 1px solid #8767bf;
+  border-radius: 5px;
+  background: #f2edfb;
+  color: #573493;
+  font: 700 0.68rem/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.milhas-calculator-latam-search:hover { text-decoration: underline; }
+.milhas-calculator-latam-search:focus-visible { outline: 2px solid #8767bf; outline-offset: 2px; }
+
+/* SeatSpy e Iberia: manter os pontos originais e mostrar a conversão abaixo. */
+#modal-table-body td > .milhas-calculator-label,
+.ib-check-boxed__price + .milhas-calculator-label {
+  display: block;
+  width: max-content;
+  margin: 0.25rem auto 0;
+  white-space: nowrap;
+}
+
+#popover td.popover-col-points > .milhas-calculator-label,
+#modal-popover td.popover-col-points > .milhas-calculator-label {
+  display: block;
+  width: max-content;
+  margin: 0.15rem auto 0;
+  padding: 0.08rem 0.22rem;
+  font-size: 0.64rem;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.cabin-class-price > .milhas-calculator-label[data-milhas-calculator-qatar],
+.weekly-calendar__day__inner > .milhas-calculator-label[data-milhas-calculator-qatar] {
+  display: block;
+  width: max-content;
+  margin: 0.3rem auto 0;
+  white-space: nowrap;
+}
+
+span.latam-typography + .milhas-calculator-label[data-milhas-calculator-latam-page] {
+  display: block;
+  width: max-content;
+  margin: 0.25rem 0 0.15rem auto;
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+#redemption-options-group [data-testid$="--radio"] .milhas-calculator-label[data-milhas-calculator-latam-page] {
+  display: block;
+  width: max-content;
+  margin: 0.2rem 0 0;
+  font-size: 0.68rem;
+  white-space: nowrap;
+}
+
+p.latam-typography > .milhas-calculator-label[data-milhas-calculator-latam-page] {
+  display: block;
+  width: max-content;
+  margin: 0.25rem 0 0;
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+.weekly-calendar__day__inner > .milhas-calculator-label[data-milhas-calculator-qatar] {
+  padding: 0.1rem 0.28rem;
+  font-size: 0.68rem;
+}
+
+/* O Seats.aero usa colunas flexíveis nos cards. A etiqueta deve
+   alinhar ao centro na linha, com o container :has() controlando o layout. */
+.booking-card-right > .milhas-calculator-label,
+.trip-right > .milhas-calculator-label {
+  display: inline-block;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.milhas-calculator-latam-partner {
+  display: inline-flex;
+  align-items: center;
+  margin: 0.2rem 0 0;
+  padding: 0.1rem 0.35rem;
+  border: 1px solid #9e75d7;
+  border-radius: 999px;
+  background: #f6f0ff;
+  color: #6132a3;
+  font: 700 0.64rem/1.25 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+/* Forçar tags info na mesma linha do nome da companhia */
+.booking-card-text:has(.milhas-calculator-flag),
+.booking-card-text:has(.milhas-calculator-latam-partner),
+.booking-card-text:has(.milhas-calculator-latam-search) {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 0.25rem;
+  flex-wrap: wrap !important;
+}
+
+/* Forçar custo e pts na mesma linha */
+.booking-card-right:has(.milhas-calculator-label),
+.trip-right:has(.milhas-calculator-label) {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 0.4rem;
+  flex-wrap: nowrap !important;
+}
+
+.milhas-calculator-flag {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.25rem;
+  padding: 0.06rem 0.25rem;
+  border: 1px solid #7aa8d0;
+  border-radius: 4px;
+  background: #eef5fb;
+  color: #1d4a72;
+  font: 600 0.6rem/1.2 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+td > .milhas-calculator-flag[data-milhas-calculator-explore] {
+  display: block;
+  width: max-content;
+  max-width: 12rem;
+  margin: 0.2rem auto 0;
+  padding: 0.12rem 0.3rem;
+  font-size: 0.62rem;
+  white-space: normal;
+}
+
+.milhas-calculator-google-flights-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin: 4px 0 4px 12px !important;
+  padding: 4px 10px !important;
+  border: 1px solid #8767bf !important;
+  border-radius: 5px !important;
+  background: #f2edfb !important;
+  color: #573493 !important;
+  font: 700 0.72rem/1.3 system-ui, -apple-system, sans-serif !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+  z-index: 10 !important;
+  position: relative !important;
+}
+
+.milhas-calculator-google-flights-link:hover {
+  text-decoration: underline !important;
+  background: #e8dff7 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .milhas-calculator-label {
+    border-color: #4f8064;
+    background: #143522;
+    color: #d4f4df;
+  }
+
+  .milhas-calculator-label[data-milhas-calculator-currency="avios"] { border-color: #b96589; background: #432035; color: #ffd7e8; }
+  .milhas-calculator-label[data-milhas-calculator-currency="latam"] { border-color: #9578c9; background: #302348; color: #eadfff; }
+  .milhas-calculator-label[data-milhas-calculator-currency="smiles"] { border-color: #c98b39; background: #463114; color: #ffe3b4; }
+  .milhas-calculator-label[data-milhas-calculator-currency="azul"] { border-color: #559bd0; background: #15354b; color: #d6efff; }
+  .milhas-calculator-label[data-milhas-calculator-currency="aegean"] { border-color: #668bc8; background: #1d304e; color: #dce9ff; }
+
+  .milhas-calculator-label--missing {
+    border-color: #9c7739;
+    background: #3b2d13;
+    color: #ffe2a8;
+  }
+
+  .milhas-calculator-nav-badge {
+    border-color: #579a78;
+    background: #173827;
+    color: #d2f4df;
+  }
+
+  .milhas-calculator-nav-badge[data-milhas-calculator-badge-kind="avios"],
+  .milhas-calculator-nav-badge[data-milhas-calculator-badge-kind="qatar"] { border-color: #b96589; background: #432035; color: #ffd7e8; }
+  .milhas-calculator-nav-badge[data-milhas-calculator-badge-kind="azul"] { border-color: #559bd0; background: #15354b; color: #d6efff; }
+  .milhas-calculator-nav-badge[data-milhas-calculator-badge-kind="smiles"] { border-color: #c98b39; background: #463114; color: #ffe3b4; }
+  .milhas-calculator-nav-badge[data-milhas-calculator-badge-kind="latam"] { border-color: #9578c9; background: #302348; color: #eadfff; }
+  .milhas-calculator-nav-badge[data-milhas-calculator-badge-kind="aegean"] { border-color: #668bc8; background: #1d304e; color: #dce9ff; }
+  .milhas-calculator-nav-badge[data-milhas-calculator-badge-kind="search"] { border-color: #73808e; background: #29323b; color: #e2e8ee; }
+
+  .milhas-calculator-latam-search { border-color: #9578c9; background: #302348; color: #eadfff; }
+
+  .milhas-calculator-latam-partner {
+    border-color: #a783db;
+    background: #2e174a;
+    color: #eadcff;
+  }
+
+  .milhas-calculator-flag {
+    border-color: #5a8ab6;
+    background: #182c42;
+    color: #cbe4ff;
+  }
+
+  .milhas-calculator-google-flights-link {
+    border-color: #9578c9;
+    background: #302348;
+    color: #eadfff;
+  }
+}
