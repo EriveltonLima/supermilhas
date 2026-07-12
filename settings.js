@@ -3,8 +3,8 @@
   'use strict';
 
   const DEFAULT_SETTINGS = Object.freeze({
-    latam: 18,
-    avios: 39,
+    latam: 25,
+    avios: 55,
     smiles: null,
     azul: null,
     aegean: 68,

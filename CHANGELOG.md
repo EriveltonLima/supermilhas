@@ -1,5 +1,10 @@
 # Histórico de versões
 
+## 1.0.1 — 2026-07-12
+
+- Altera o CPM padrão de Avios para R$ 55 por milheiro.
+- Altera o CPM padrão de LATAM Pass para R$ 25 por milheiro.
+
 ## 1.0.0 — 2026-07-12
 
 - Primeira versão preparada para a Chrome Web Store.

@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/EriveltonLima/supermilhas/releases/tag/v1.0.0"><strong>Baixar Supermilhas 1.0.0</strong></a>
+  <a href="https://github.com/EriveltonLima/supermilhas/releases/tag/v1.0.1"><strong>Baixar Supermilhas 1.0.1</strong></a>
   &nbsp;·&nbsp;
   <a href="https://github.com/EriveltonLima/supermilhas/issues">Relatar um problema</a>
   &nbsp;·&nbsp;
@@ -33,7 +33,7 @@ Uma passagem por 60.000 pontos pode parecer barata — até você considerar qua
 - Identifique moedas, parceiros, temporadas e tabelas com mais contexto.
 
 ```text
-60.000 Avios ÷ 1.000 × R$ 39 = R$ 2.340
+60.000 Avios ÷ 1.000 × R$ 55 = R$ 3.300
 ```
 
 Você controla o CPM. A extensão ajuda a interpretar o resultado.
@@ -84,7 +84,7 @@ O Explore do Seats.aero também ganha uma organização mais útil para quem com
 
 Enquanto a publicação na Chrome Web Store está em análise:
 
-1. Baixe a [release mais recente](https://github.com/EriveltonLima/supermilhas/releases/tag/v1.0.0).
+1. Baixe a [release mais recente](https://github.com/EriveltonLima/supermilhas/releases/tag/v1.0.1).
 2. Extraia `supermilhas-chrome.zip`.
 3. Abra `chrome://extensions`.
 4. Ative **Modo do desenvolvedor**.
