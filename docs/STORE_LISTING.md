@@ -95,3 +95,13 @@ Capturas recomendadas:
 
 Antes de enviar, remova nomes, contas, números de fidelidade e outras informações pessoais das imagens.
 
+## Assets prontos
+
+Os arquivos finais estão em `capturas/store-assets/`:
+
+- `store-icon-128.png` — ícone obrigatório da Store;
+- `promo-small-440x280.png` — bloco promocional pequeno;
+- `promo-marquee-1400x560.png` — bloco promocional de letreiro;
+- `screenshot-01-explore-menu.png` até `screenshot-05-avios-money.png` — capturas 1280×800.
+
+Ordem recomendada para os prints: `03`, `04`, `05`, `02` e `01`.

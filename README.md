@@ -61,6 +61,8 @@ popup.*             Configurações da extensão
 about.*             Página de apresentação e FAQ
 icon*.png           Ícones da extensão
 docs/               Publicação, privacidade e textos da loja
+scripts/            Geração reproduzível dos recursos gráficos
+capturas/store-assets/  Ícone, prints e blocos prontos para a Store
 ```
 
 Não há servidor, conta, telemetria, anúncios ou dependências de produção.
@@ -98,6 +100,12 @@ Abra o ZIP e confirme que `manifest.json` está na raiz. Não inclua screenshots
 
 Consulte [docs/CHROME_WEB_STORE.md](docs/CHROME_WEB_STORE.md) para o passo a passo completo.
 
+Os recursos gráficos da loja podem ser regenerados no Windows com:
+
+```powershell
+.\scripts\generate-store-assets.ps1
+```
+
 ## Privacidade e segurança
 
 O Supermilhas lê apenas o conteúdo visível dos sites declarados no Manifest para adicionar cálculos e links. Nenhum conteúdo de página ou histórico é enviado para servidores do projeto. Veja [PRIVACY.md](PRIVACY.md).
@@ -111,4 +119,3 @@ Relate mudanças de HTML, resultados incorretos e sugestões pelas Issues. Ao re
 ## Apoio
 
 Chave Pix: `erivelton.lima.tech@gmail.com`
-
