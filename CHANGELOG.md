@@ -1,5 +1,9 @@
 # Histórico de versões
 
+## Próxima versão
+
+- Mostra o custo em reais, conforme o CPM configurado, nos avisos de tabela fixa da LATAM e da Iberia.
+
 ## 1.0.1 — 2026-07-12
 
 - Altera o CPM padrão de Avios para R$ 55 por milheiro.
