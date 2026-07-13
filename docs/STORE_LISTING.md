@@ -6,7 +6,7 @@ Supermilhas
 
 ## Resumo curto
 
-Compare milhas e Avios em reais e abra consultas de resgate nos principais sites de passagens-prêmio.
+Converta milhas e pontos em estimativas de custo e compare passagens-prêmio com mais clareza.
 
 ## Categoria e idioma
 
@@ -16,25 +16,25 @@ Compare milhas e Avios em reais e abra consultas de resgate nos principais sites
 
 ## Descrição detalhada
 
-O Supermilhas ajuda viajantes brasileiros a entender o custo estimado de passagens-prêmio enquanto pesquisam disponibilidade.
+O Supermilhas ajuda viajantes a entender o custo estimado de passagens-prêmio enquanto pesquisam disponibilidade.
 
-A extensão preserva os valores originais em pontos ou milhas e acrescenta uma estimativa em reais baseada no CPM — custo por milheiro — configurado pelo usuário.
+A extensão mantém visível a quantidade original de pontos ou milhas e acrescenta uma conversão em reais baseada no CPM — custo por milheiro — definido pelo usuário. Assim, diferentes opções de resgate podem ser comparadas com uma referência de custo comum.
 
-Recursos:
+Entre os recursos estão:
 
-- conversão de Avios e milhas em reais;
-- CPMs independentes para LATAM Pass, Avios, Smiles, Azul e Aegean;
-- custo total estimado em opções LATAM de milhas + dinheiro;
-- contexto de programas, parceiros e temporadas no Seats.aero;
-- conversão no SeatSpy, Iberia e Qatar Airways;
-- atalhos do Google Voos e Seats.aero para consultar voos LATAM no LATAM Pass;
-- menu Explore organizado para programas relevantes ao público brasileiro.
+- conversão local de pontos e milhas em reais;
+- CPM independente para cada tipo de saldo configurado;
+- cálculo combinado de milhas e parcela em dinheiro;
+- identificação de programas, parceiros, cabines e temporadas;
+- indicação de valores de tabelas fixas quando aplicável;
+- atalhos contextuais para consultar uma rota no programa emissor;
+- organização de resultados relevantes para viajantes brasileiros.
 
 O Supermilhas não garante disponibilidade, preço ou elegibilidade de resgate. Taxas, sobretaxas e regras devem ser confirmadas diretamente no programa emissor.
 
 Privacidade: os cálculos são feitos localmente no navegador. A extensão não possui servidor, não envia pesquisas de voo ao desenvolvedor e não utiliza anúncios ou telemetria.
 
-O Supermilhas é independente e não possui vínculo com companhias aéreas, programas de fidelidade, Seats.aero, SeatSpy ou Google.
+O Supermilhas é independente e não possui vínculo, autorização ou endosso de companhias aéreas, programas de fidelidade ou serviços de pesquisa de voos.
 
 ## Propósito único — campo “Single purpose”
 

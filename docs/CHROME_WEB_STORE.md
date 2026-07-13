@@ -47,6 +47,7 @@ Use os textos de [STORE_LISTING.md](STORE_LISTING.md).
 - idioma: português (Brasil);
 - categoria sugerida: Viagens;
 - descrição clara, sem prometer disponibilidade ou economia garantida;
+- descrição baseada em benefícios, sem listas de sites, marcas ou palavras-chave;
 - ícone 128×128;
 - no mínimo uma captura 1280×800, até cinco;
 - tile pequeno 440×280;
@@ -100,6 +101,7 @@ Todas as opções passam pelas mesmas políticas e revisão. Para um teste fecha
 - [ ] Captura 1280×800 sem dados pessoais
 - [ ] Tile 440×280
 - [ ] Descrição e propósito único preenchidos
+- [ ] Descrição sem enumerações de sites ou marcas
 - [ ] Permissões justificadas
 - [ ] Código remoto declarado como “Não”
 - [ ] Práticas de dados preenchidas
@@ -115,4 +117,3 @@ Todas as opções passam pelas mesmas políticas e revisão. Para um teste fecha
 - [Configurar distribuição](https://developer.chrome.com/docs/webstore/cws-dashboard-distribution/)
 - [Publicar](https://developer.chrome.com/docs/webstore/publish/)
 - [Políticas do programa](https://developer.chrome.com/docs/webstore/program-policies/policies)
-

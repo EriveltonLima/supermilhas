@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Supermilhas",
-  "version": "1.0.1",
-  "description": "Converte milhas e Avios em reais e cria atalhos de resgate no Seats.aero, SeatSpy, Iberia, Qatar Airways, LATAM e Google Voos.",
+  "version": "1.0.2",
+  "description": "Converte milhas e pontos em estimativas de custo e facilita a comparação de passagens-prêmio.",
   "permissions": ["storage"],
   "icons": {
     "16": "icon16.png",

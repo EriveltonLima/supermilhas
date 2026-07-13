@@ -1,8 +1,9 @@
 # Histórico de versões
 
-## Próxima versão
+## 1.0.2 — 2026-07-13
 
 - Mostra o custo em reais, conforme o CPM configurado, nos avisos de tabela fixa da LATAM e da Iberia.
+- Reescreve os metadados públicos com foco nas funções da extensão e sem enumerações de marcas.
 
 ## 1.0.1 — 2026-07-12
 
