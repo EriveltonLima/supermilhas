@@ -23,16 +23,23 @@ Estas instruções foram conferidas com a documentação oficial do Chrome em 12
 Execute na raiz do projeto:
 
 ```powershell
+$version = (Get-Content -Raw '.\manifest.json' | ConvertFrom-Json).version
+$releaseDir = '.\releases\archives'
+$zip = Join-Path $releaseDir "supermilhas-chrome-$version.zip"
+
 $files = @(
   'manifest.json','content.js','settings.js','styles.css',
   'popup.html','popup.css','popup.js',
   'about.html','about.css','about.js',
   'lib','icon16.png','icon32.png','icon48.png','icon128.png'
 )
-Compress-Archive -Path $files -DestinationPath '.\supermilhas-chrome.zip' -Force
+New-Item -ItemType Directory -Force -Path $releaseDir | Out-Null
+Compress-Archive -Path $files -DestinationPath $zip -Force
 ```
 
 Abra o ZIP e verifique que `manifest.json` aparece diretamente na raiz. O pacote não deve conter uma pasta externa envolvendo todos os arquivos.
+
+Os pacotes gerados ficam em `releases/archives/`. Pastas extraídas para testes locais devem ficar em `releases/unpacked/`; toda a pasta `releases/` é ignorada pelo Git.
 
 ## 4. Criar o item
 

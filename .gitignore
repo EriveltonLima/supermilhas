@@ -8,4 +8,5 @@ node_modules/
 Thumbs.db
 screenshots-private/
 capturas/*.png
-supermilhas-chrome/
+supermilhas-chrome*/
+releases/
