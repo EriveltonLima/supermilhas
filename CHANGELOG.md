@@ -1,5 +1,9 @@
 # Histórico de versões
 
+## 1.0.3 — 2026-07-15
+
+- Evita uma segunda conversão LATAM no elemento pai da tarifa e não soma taxas em BRL como se fossem uma opção de milhas + dinheiro.
+
 ## 1.0.2 — 2026-07-13
 
 - Mostra o custo em reais, conforme o CPM configurado, nos avisos de tabela fixa da LATAM e da Iberia.

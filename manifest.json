@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Supermilhas",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Converte milhas e pontos em estimativas de custo e facilita a comparação de passagens-prêmio.",
   "permissions": ["storage"],
   "icons": {
